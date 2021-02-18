@@ -10,8 +10,9 @@ function App() {
       <header className="App-header">
         {name && <h2>Hai {name}</h2>}
         <GitHubLogin
-          clientId=""
-          redirectUri=""
+          clientId="3a4dd5beeae140955679"
+          clientSecret="c030a820d6865c417df1da73ee7d822409f3ff70"
+          redirectUri="http://localhost:3000/"
           onSuccess={(name) => setName(name)}
           onFailure={(resp) => console.log(resp)}
         />
